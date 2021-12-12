@@ -1,0 +1,245 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #1b2473;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+
+}
+.autorization {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: white;
+	border-radius: 20px;
+	width: 600px;
+	height: 412px;
+	margin-top: 82px;
+}
+
+.autorization__title {
+	text-align: center;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 50px;
+	color: #787878;
+}
+
+.autorization__anchor {
+	font-family: Roboto;
+	font-weight: bold;
+	line-height: 16px;
+	color: #787878;
+	margin-left: 2px;
+	font-size: 3vmin;
+}
+
+.autorization__label {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 3vmin;
+	line-height: 16px;
+	color: #787878;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 16px;
+}
+
+.autorization__email-wrapper,
+.autorization__pass-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.autorization__input {
+	width: 509px;
+	height: 49px;
+	border-radius: 10px;
+	border: 2px solid #787878;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	padding-left: 15px;
+}
+
+.autorization__input::placeholder {
+	color: #CCCCCC;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.autorization__label_size_s {
+	font-size: 14px;
+}
+
+.autorization__label_margin{
+	margin-top: 0;
+	margin-left: 5px;
+}
+
+
+.autorization__button {
+	width: 180px;
+	min-height: 52px;
+	background: #1A226B;
+	border-radius: 10px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 16px;
+	color: #FFFFFF;
+	margin-top: auto;
+	margin-bottom: 26px;
+}
+
+
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+	.main {
+		display: flex;
+		justify-content: center;
+		margin: 3%;
+	}
+	.autorization {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: white;
+		border-radius: 20px;
+		width: 500vw;
+		height: 90vh;
+		
+		margin: 3%;
+	}
+
+	.autorization__title {
+		text-align: center;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12vmin;
+		line-height: 50px;
+		color: #787878;
+	}
+
+	.autorization__label {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 3vw;
+		line-height: 16px;
+		color: #787878;
+		margin-top: 10px;
+		margin-left: 30px;
+		margin-bottom: 5px;
+	}
+
+	.autorization__email-wrapper,
+	.autorization__pass-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.autorization__input {
+		width: 70vw;
+		height: 10vmin;
+		border-radius: 10px;
+		border: 2px solid #787878;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 3vw;
+		padding-left: 15px;
+	}
+
+	.autorization__input::placeholder {
+		color: #CCCCCC;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 5vmin;
+	}
+
+	.autorization__label_size_s {
+		font-size: 14px;
+	}
+
+	.autorization__label_margin{
+		margin-top: 0;
+		margin-left: 5px;
+	}
+
+	.autorization__button {
+		width: 180px;
+		height: 52px;
+		background: #1A226B;
+		border-radius: 10px;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 16px;
+		color: #FFFFFF;
+		margin-top: auto;
+		margin-bottom: 30%;
+	}
+}
+
+	.autorization__label-warning,
+	.autorization__label-valid {
+		display: none;
+		font-weight: bold;
+		font-family: Roboto;
+		font-size: 10px;
+		margin-left: 16px;
+		color: #CB2424;
+	}
+
+	.autorization__color_red {
+		color: #CB2424;
+		border-color: red;
+	}
+
+	.autorization__checkbox-wrapper {
+		margin-top: 10px;
+		margin-left: 45px;
+	}
+
+	.autorization__checkbox {
+		display: none;
+	}
+
+	.checkbox-mark {
+		position: relative;
+		width: 25px;
+		height: 25px;
+		border-radius: 5px;
+		border: 2px solid grey;
+		display: inline-block;
+	}
+
+	.checkbox-mark::before {
+		content: "";
+		position: absolute;
+		bottom: 15px;
+		width: 10px;
+		height: 10px;
+		display: block;
+		font-size: 23px;
+
+	}
+
+	.autorization__checkbox:checked + .checkbox-mark::before {
+		content: "🗸";
+	}
