@@ -1,0 +1,20 @@
+.Header {
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+
+#Header__logo {
+    width: 7vmin;
+    height: 7vmin;
+    padding-top: 3vmin;
+}
+
+.Header__header {
+    display: flex;
+    margin-left: 5vmin;
+    margin-top: 4vmin;
+}
+
+h1 {
+    font-size: 5vmin;
+}
