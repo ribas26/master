@@ -1,0 +1,38 @@
+.Main__main {
+    padding: 0vh 4vw;
+}
+
+.Main__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Main__card-product {
+    text-align: center;
+    margin: 10px 10px;
+    margin-top: auto;
+    width: 20vw;
+    min-width: 150px;
+}
+
+.Main__img-card-product {
+    width: 20vw;
+    height: 20vw;
+    min-width: 150px;
+    min-height: 150px;
+}
+
+.Main__button-add {
+    background-color:white;
+    border-radius: 20px;
+    border: 2px solid darkorange;
+    font-size: 25px;
+    color: darkorange;
+}
+
+.Main__button-add:hover {
+    background-color: darkorange;
+    color: white;
+    transition: 0.5s;
+}

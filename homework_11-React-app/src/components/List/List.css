@@ -1,0 +1,16 @@
+.List__card-product {
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.List__img-card-product {
+    width: 20vw;
+    height: 20vw;
+    min-width: 150px;
+    min-height: 150px;
+}
+
+.List__name {
+    margin: 0 1vw;
+}

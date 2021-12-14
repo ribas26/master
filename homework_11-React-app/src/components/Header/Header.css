@@ -1,0 +1,52 @@
+.Header {
+    border-bottom: 1px solid grey;
+}
+
+#Header__logo {
+    width: 7vmin;
+    height: 7vmin;
+    padding-top: 3vmin;
+    cursor: pointer;
+}
+
+.Header__header {
+    display: flex;
+
+    justify-content: space-between;
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+    margin-top: 4vmin;
+}
+
+h1 {
+    font-size: 5vmin;
+}
+
+.Header__anchor {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.Header__cart-block {
+    display: flex;
+    align-items: center;
+}
+
+.Header__button {
+    /*display: flex;*/
+    border-radius: 10px;
+    border: 0px;
+    /*height: 50px;*/
+    font-size: 25px;
+    font-family: "Comic Sans MS";
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+.Header__cart {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
